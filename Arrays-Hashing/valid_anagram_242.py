@@ -20,8 +20,16 @@ class Solution(object):
             letters_s[s[i]] = letters_s.get(s[i], 0) + 1
             letters_t[t[i]] = letters_t.get(t[i], 0) + 1
 
+
+        for letter in s:
+            if letters_s[letter] != letters_t.get(letter, 0):
+                return False
+
+       
+        """""
         if letters_s.items() != letters_t.items():
             return False
+        """""
         return True
         
 sol = Solution()
