@@ -100,3 +100,63 @@ Output: -1
 Explanation: 2 does not exist in nums so return -1
 
 answer : [binary_search.py](binary_search/binary_search_704.py)
+
+### Search in rotated array
+
+There is an integer array nums sorted in ascending order (with distinct values).
+
+Prior to being passed to your function, nums is possibly left rotated at an unknown index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be left rotated by 3 indices and become [4,5,6,7,0,1,2].
+
+Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+ 
+
+Example 1:
+
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+Example 2:
+
+Input: nums = [4,5,6,7,0,1,2], target = 3
+Output: -1
+Example 3:
+
+Input: nums = [1], target = 0
+Output: -1
+
+answer = [search_in_sorted_array.py](/binary_search/search_in_rotated_array.py)
+
+
+### Find Minimum in rotated array 153
+
+Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+
+[4,5,6,7,0,1,2] if it was rotated 4 times.
+[0,1,2,4,5,6,7] if it was rotated 7 times.
+Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
+
+Given the sorted rotated array nums of unique elements, return the minimum element of this array.
+
+You must write an algorithm that runs in O(log n) time.
+
+ 
+
+Example 1:
+
+Input: nums = [3,4,5,1,2]
+Output: 1
+Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+Example 2:
+
+Input: nums = [4,5,6,7,0,1,2]
+Output: 0
+Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
+Example 3:
+
+Input: nums = [11,13,15,17]
+Output: 11
+Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
+
+answer: [Find_minimum_.py](/binary_search/find_minimum_in_rotated_array.py)
