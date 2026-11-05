@@ -101,7 +101,7 @@ Explanation: 2 does not exist in nums so return -1
 
 answer : [binary_search.py](binary_search/binary_search_704.py)
 
-### Search in rotated array
+### Search in rotated array 33
 
 There is an integer array nums sorted in ascending order (with distinct values).
 
